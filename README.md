@@ -5,7 +5,7 @@
 
 - [Enumerable](#enumerable)
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Enumerable\] ](#-enumerable-)
+- [📖 \[School library\] ](#-school-library-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
   - [💻 Getting Started ](#-getting-started-)
@@ -21,9 +21,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Enumerable] <a name="about-project"></a>
+# 📖 [School library] <a name="about-project"></a>
 
-> This repository you can interact with all?, any? and  filter methods created.
+> In This repository you can interact with some classes and their linked features in order to see how a school library works.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -45,8 +45,7 @@
     <li><a href="https://code.visualstudio.com/">Viual Studio Code</a></li>
   </ul>
 </details>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+lf<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -58,7 +57,7 @@ To get a local copy up and running, follow these steps.
 
 ### You need to hace installed [git](https://git-scm.com/) and [GitHub](https://github.com/) in your local enviroment.
 
-- Open a Git Bash and execute: "git clone https://github.com/J2ZROMERO/Enumerable"
+- Open a Git Bash and execute: "git clone https://github.com/J2ZROMERO/School-library"
   
 ### Prerequisites
 
@@ -87,18 +86,6 @@ To run the project, you must stay in the correct path and execute the command or
 
 👤 **JOSE ZEPEDA**
 
-- GitHub: [J2ZROMERO](https://github.com/J2ZROMERO)
-- Twitter: [@JOSEZEPED4](https://twitter.com/JOSEZEPED4)
-- LinkedIn: [JOSE ZEPEDA](https://www.linkedin.com/in/jose-zepeda-733ab91ab/)
-
-👤 **Diego Garcia**
-
-- GitHub: [@taldr27](https://github.com/taldr27)
-- LinkedIn: [diegogarcial](https://www.linkedin.com/in/diegogarcial/)
-
-👤 **Stanley Nnamani**
-- GitHub: [@starmindz](https://github.com/starmindz)
-- LinkedIn: [Stanley Nnamani](https://www.linkedin.com/in/stanley-nnamani)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
