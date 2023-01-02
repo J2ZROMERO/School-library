@@ -10,6 +10,5 @@ class Student < Person
   end
 end
 
-
 student = Student.new(15, 'jose', false, 'A')
 puts student.play_hooky
