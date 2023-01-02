@@ -4,7 +4,7 @@ class Person
   attr_accessor :name, :age
   attr_reader :id
 
-  def initialize(age = 10, name = 'Unknown', parent_permission = true)
+  def initialize(age = 10, name = 'Unknown', parent_permission: true)
     @id = SecureRandom.uuid
     @name = name
     @age = age
@@ -26,5 +26,5 @@ class Person
   end
 end
 
-person = Person.new(10,"juan",false)
+person = Person.new(10, 'juan', false)
 puts person
