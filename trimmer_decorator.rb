@@ -1,25 +1,18 @@
 require './person'
 
 class TrimmerDecorator < Person
+  def initialize(nameable)
+    @nameable = nameable
+    super(nameable)
+  end
 
-def initialize(nameable)
-@nameable = nameable
+  def correct_name()
+    return @nameable.correct_name.slice(0, 10) if @nameable.correct_name.length > 10
+
+
+    @nameable.correct_name
+  end
 end
-
-
-def correct_name()
-if @nameable.correct_name.length > 10
-return @nameable.correct_name.slice(0, 10)
-else 
-    return @nameable.correct_name
-end
-
-
-end
-
-
-
-end
-person = Person.new("jose juan zepeda Romero",10, 'juan', parent_permission: false)
+person = Person.new('jose juan zepeda Romero', 10, 'juan', parent_permission: false)
 trimer = TrimmerDecorator.new(person)
 puts trimer.correct_name

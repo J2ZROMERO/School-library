@@ -6,12 +6,13 @@ class Person < Nameable
   attr_accessor :name, :age
   attr_reader :id
 
-  def initialize(nameable,age = 10, name = 'Unknown', parent_permission: true)
+  def initialize(nameable, age = 10, name = 'Unknown', parent_permission: true)
     @id = SecureRandom.uuid
     @name = name
     @age = age
     @parent_permission = parent_permission
-    @nameable =  nameable
+    @nameable = nameable
+    super()
   end
 
   # Método privado
@@ -29,10 +30,9 @@ class Person < Nameable
   end
 
   def correct_name()
-  @nameable
-end
-  
+    @nameable
+  end
 end
 
- person = Person.new("carlitos",10, 'juan', parent_permission: false)
- puts person.correct_name()
+# person = Person.new('carlitos', 10, 'juan', parent_permission: false)
+# puts person.correct_name

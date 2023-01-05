@@ -1,15 +1,15 @@
 require './person'
-class CapitalizeDecorator  < Person
+class CapitalizeDecorator < Person
+  def initialize(nameable)
+    @nameable = nameable
+    super(nameable)
+  end
 
-def initialize(nameable)
-@nameable = nameable
-end
-    def correct_name()
-      return @nameable.correct_name.upcase
-    end
+  def correct_name()
+    @nameable.correct_name.upcase
+  end
 end
 
-person = Person.new("carlitos",10, 'juan', parent_permission: false)
-capital   = CapitalizeDecorator.new(person)
+person = Person.new('carlitos', 10, 'juan', parent_permission: false)
+capital = CapitalizeDecorator.new(person)
 puts capital.correct_name
-
