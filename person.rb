@@ -4,7 +4,7 @@ class Person
   attr_accessor :name, :age, :rentals
   attr_reader :id
 
-  def initialize(age = 10, name = 'Unknown', parent_permission =  true)
+  def initialize(age = 10, name = 'Unknown', parent_permission: true)
     @id = SecureRandom.uuid
     @name = name
     @age = age
@@ -25,12 +25,9 @@ class Person
   def can_use_services?
     of_age? || @parent_permission
   end
-  def addRentals(rental)
 
+  def add_rentals(rental)
     @rentals.push(rental)
-    rental.person = self;
+    rental.person = self
   end
-  
 end
-
-
