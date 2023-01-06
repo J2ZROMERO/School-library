@@ -8,10 +8,10 @@ class Person < Nameable
 
   def initialize(age = 0, name = 'Unknown', nameable = 'Unknown', parent_permission: true)
     @id = SecureRandom.uuid
-    @name = name
     @age = age
-    @parent_permission = parent_permission
+    @name = name
     @nameable = nameable
+    @parent_permission = parent_permission
     @rentals = []
     super()
   end
