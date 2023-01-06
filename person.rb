@@ -1,4 +1,3 @@
-
 require 'securerandom'
 require './nameable'
 
@@ -34,9 +33,9 @@ class Person < Nameable
   def correct_name()
     @nameable
   end
+
   def add_rentals(rental)
     @rentals.push(rental)
     rental.person = self
   end
 end
-
