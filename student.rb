@@ -1,14 +1,14 @@
 require './person'
+
 class Student < Person
-  def initialize(age, name, parent_permision, classroom)
-    super(age, name, parent_permision)
-    @classroom = classroom
+  attr_accessor :classroom
+
+  def initialize(age, name, classroom, nameable = 'Unknow', parent_permission: true)
+    super(age, name, nameable, parent_permission: parent_permission)
+    @classroom = classroom.label
   end
 
   def play_hooky
     '¯(ツ)/¯'
   end
 end
-
-student = Student.new(15, 'jose', false, 'A')
-puts student.play_hooky

@@ -3,15 +3,16 @@ require './nameable'
 
 class Person < Nameable
   # Atributos de instancia
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :rentals, :parent_permission
   attr_reader :id
 
-  def initialize(nameable, age = 10, name = 'Unknown', parent_permission: true)
+  def initialize(age = 0, name = 'Unknown', nameable = 'Unknown', parent_permission: true)
     @id = SecureRandom.uuid
     @name = name
     @age = age
     @parent_permission = parent_permission
     @nameable = nameable
+    @rentals = []
     super()
   end
 
@@ -32,7 +33,9 @@ class Person < Nameable
   def correct_name()
     @nameable
   end
-end
 
-# person = Person.new('carlitos', 10, 'juan', parent_permission: false)
-# puts person.correct_name
+  def add_rentals(rental)
+    @rentals.push(rental)
+    rental.person = self
+  end
+end

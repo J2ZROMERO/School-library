@@ -10,5 +10,5 @@ class Teacher < Person
   end
 end
 
-teacher = Teacher.new(40, 'joaquin', 'ortopedia')
-puts teacher.can_use_services?
+# teacher = Teacher.new(40, 'joaquin', 'ortopedia')
+# puts teacher.can_use_services?
