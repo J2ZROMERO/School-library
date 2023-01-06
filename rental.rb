@@ -14,7 +14,7 @@ rent1 = Rental.new('2020-12-12')
 rent2 = Rental.new('2020-12-25')
 rent3 = Rental.new('2021-12-25')
 
-persona = Person.new(15, 'jose ', parent_permission: false)
+persona = Person.new(15, 'jose ','', parent_permission: false)
 libro = Book.new('Three little pigs', 'Carlos')
 
 libro.rental_book(rent1)
