@@ -53,7 +53,8 @@ class Main
   def startprogram
     loop do
       entrimessage
-      @optionselected = gets.chomp.to_i
+      input  = gets
+      @optionselected = nput.chomp.to_i if input
       optionselected(@optionselected)
       break unless @optionselected != 7
     end
