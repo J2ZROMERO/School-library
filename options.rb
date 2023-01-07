@@ -37,7 +37,7 @@ end
 module OPTIONS
   include STUDENTTEACHER
   def option1()
-    if @books.length.zero?
+    if @books.empty?
       puts 'There are not books added'
     else
       puts 'Books'
@@ -48,7 +48,7 @@ module OPTIONS
   end
 
   def option2()
-    if @teachers.length.zero? && @students.length.zero?
+    if @teachers.empty? && @students.empty?
       puts 'There are not people added'
     else
       @students.each do |element|
@@ -57,7 +57,7 @@ module OPTIONS
       end
       @teachers.each do |element|
         agep = element.age.to_s
-        print "[Teacher: ] Name: #{element.name} ID: #{element.id} Age: #{agep}"
+        puts "[Teacher: ] Name: #{element.name} ID: #{element.id} Age: #{agep}"
       end
     end
   end
