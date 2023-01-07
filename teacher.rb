@@ -1,6 +1,8 @@
 require './person'
 class Teacher < Person
-  def initialize(name, age, specialization)
+  attr_accessor :specialization
+
+  def initialize(age, name, specialization)
     super(age, name, true)
     @specialization = specialization
   end
@@ -9,6 +11,3 @@ class Teacher < Person
     true
   end
 end
-
-# teacher = Teacher.new(40, 'joaquin', 'ortopedia')
-# puts teacher.can_use_services?

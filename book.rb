@@ -12,4 +12,6 @@ class Book
     @rentals.push(rental)
     rental.book = self
   end
+
+  def listbooks; end
 end
