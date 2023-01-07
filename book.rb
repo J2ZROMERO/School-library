@@ -13,9 +13,5 @@ class Book
     rental.book = self
   end
 
-  def listbooks()
-  
-  end
+  def listbooks; end
 end
-
-    

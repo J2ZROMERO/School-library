@@ -1,10 +1,10 @@
 require './person'
 class Teacher < Person
-attr_accessor :specialization, :name, :name
+  attr_accessor :specialization
+
   def initialize(age, name, specialization)
     super(age, name, true)
     @specialization = specialization
-    
   end
 
   def can_use_services?()
