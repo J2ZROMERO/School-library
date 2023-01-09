@@ -1,41 +1,16 @@
-module STUDENTTEACHER
-  def student_option()
-    print 'Age '
-    age = gets.chomp.to_i
-    print 'Name '
-    name = gets.chomp!
-    print 'Has the parent permission [Y/N]'
-    inputpermission = gets.chomp!
+require './student_option'
+require './teacher_option'
 
-    case inputpermission.downcase
-    when 'y'
-      parent = true
-    when 'n'
-      parent = false
-    else
-      puts 'Error selectc the correct option'
-    end
-    @students << Student.new(age, name, ClassRoom.new(''), '', parent_permission: parent)
-    @people << Student.new(age, name, ClassRoom.new(''), '', parent_permission: parent)
-    puts 'Student added successfully'
-  end
+class OPTIONS
 
-  def teacher_option()
-    print 'Age '
-    age = gets.chomp.to_i
-    print 'Name '
-    name = gets.chomp!
-    print 'Especiality '
-    speciality = gets.chomp!
-
-    @teachers << Teacher.new(age, name, speciality)
-    @people << Teacher.new(age, name, speciality)
-    puts 'Techaer added successfully'
-  end
+def initialize(books,teacher,student,people,rentals)
+@books = books
+@teachers = teacher
+@students = student
+@people = people
+@rentals = rentals
 end
 
-module OPTIONS
-  include STUDENTTEACHER
   def option1()
     if @books.empty?
       puts 'There are not books added'
@@ -69,9 +44,13 @@ module OPTIONS
 
     case @personoption
     when 1
-      student_option
+      student = Student.new(@students,@people)
+      student.student_option
+     
     when 2
-      teacher_option
+      teacher = Teacher.new(@teachers,@people)
+      teacher.teacher_option
+      
     else
       puts 'person number incorrect choose the options again'
     end
