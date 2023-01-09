@@ -1,6 +1,6 @@
 require './student'
 require './classroom'
-class Student
+class StudentOption
     def initialize(students,people)
         @students = students
         @people = people

@@ -44,11 +44,11 @@ end
 
     case @personoption
     when 1
-      student = Student.new(@students,@people)
+      student = StudentOption.new(@students,@people)
       student.student_option
      
     when 2
-      teacher = Teacher.new(@teachers,@people)
+      teacher = TeacherOption.new(@teachers,@people)
       teacher.teacher_option
       
     else

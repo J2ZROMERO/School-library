@@ -1,4 +1,5 @@
-class Teacher
+require './teacher'
+class TeacherOption
     def initialize(teachers,people)
         @teachers = teachers
         @people = people

@@ -31,19 +31,18 @@ class App
     end
   end
 
-  def optionselected(data)
-    optionsc = OPTIONS.new(@books,@teachers,@students,@people,@rentals)
+  def optionselected(data, op)
     options = {
-      1 => optionsc.option1,
-      2 => optionsc.option2,
-      3 => optionsc.option3,
-      4 => optionsc.option4,
-      5 => optionsc.option5,
-      6 => optionsc.option6,
-      7 => optionsc.option7
+      1 => :option1,
+      2 => :option2,
+      3 => :option3,
+      4 => :option4,
+      5 => :option5,
+      6 => :option6,
+      7 => :option7
     }
-    puts ' '
-    send(options.fetch(data, :invalid_option))
+      # Call the method stored in the value of the options hash with the op object as an argument
+    options.fetch(data, :invalid_option).to_proc.call(op)
   end
 
   def invalid_option
@@ -51,12 +50,14 @@ class App
   end
 
   def startprogram
-    loop do
+    optionsc = OPTIONS.new(@books,@teachers,@students,@people,@rentals)
+      loop do
       entrimessage
       @optionselected = gets.chomp.to_i
-      optionselected(@optionselected)
+      puts "a"
+      optionselected(@optionselected,optionsc)
       break unless @optionselected != 7
-    end
+     end
   end
 end
 
