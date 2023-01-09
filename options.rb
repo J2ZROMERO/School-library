@@ -2,14 +2,13 @@ require './student_option'
 require './teacher_option'
 
 class OPTIONS
-
-def initialize(books,teacher,student,people,rentals)
-@books = books
-@teachers = teacher
-@students = student
-@people = people
-@rentals = rentals
-end
+  def initialize(books, teacher, student, people, rentals)
+    @books = books
+    @teachers = teacher
+    @students = student
+    @people = people
+    @rentals = rentals
+  end
 
   def option1()
     if @books.empty?
@@ -44,13 +43,13 @@ end
 
     case @personoption
     when 1
-      student = StudentOption.new(@students,@people)
+      student = StudentOption.new(@students, @people)
       student.student_option
-     
+
     when 2
-      teacher = TeacherOption.new(@teachers,@people)
+      teacher = TeacherOption.new(@teachers, @people)
       teacher.teacher_option
-      
+
     else
       puts 'person number incorrect choose the options again'
     end
