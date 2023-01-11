@@ -11,7 +11,6 @@ describe Student do
     end
   end
 
-
   context 'When testing the student class' do
     it 'The play_hooky option must contain: ¯(ツ)/¯ ' do
       expect(@student.play_hooky).to eq '¯(ツ)/¯'

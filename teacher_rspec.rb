@@ -11,7 +11,6 @@ describe Teacher do
     end
   end
 
-
   context 'When testing the student class' do
     it 'The can_use_services method must be true ' do
       expect(@teacher.can_use_services?).to_not be false
