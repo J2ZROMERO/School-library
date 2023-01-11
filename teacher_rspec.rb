@@ -2,7 +2,7 @@ require './teacher'
 
 describe Teacher do
   before(:all) do
-    @teacher = Teacher.new(60,'Abubakar','Medical')
+    @teacher = Teacher.new(60, 'Abubakar', 'Medical')
   end
 
   context 'When testing the Teacher class' do

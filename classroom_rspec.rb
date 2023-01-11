@@ -12,7 +12,7 @@ describe ClassRoom do
   context 'When testing the classroom class' do
     it ' The method add student must add one student and shows the name' do
       classroom = ClassRoom.new('class b')
-      student = Student.new(50, 'Jhosep',classroom,'', parent_permission: true)
+      student = Student.new(50, 'Jhosep', classroom, '', parent_permission: true)
       classroom.addstudent(student)
       expect(classroom.students[0].name).to eq 'Jhosep'
     end

@@ -5,8 +5,8 @@ require './student'
 require './classroom'
 describe Rental do
   before(:all) do
-    @teacher = Teacher.new(60, 'Abubakar','Medical')
-    @student = Student.new(20, 'Lucca',ClassRoom.new("class b"),'', parent_permission: true)
+    @teacher = Teacher.new(60, 'Abubakar', 'Medical')
+    @student = Student.new(20, 'Lucca', ClassRoom.new('class b'), '', parent_permission: true)
     @book = Book.new('Pinocho', 'Amare')
     @rentals = Rental.new('01-15-2023')
   end

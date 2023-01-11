@@ -9,7 +9,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
   - [💻 Getting Started ](#-getting-started-)
-    - [You need to hace installed git and GitHub in your local enviroment.](#you-need-to-hace-installed-git-and-github-in-your-local-enviroment)
+    - [You need to have installed git and GitHub in your local enviroment.](#you-need-to-have-installed-git-and-github-in-your-local-enviroment)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
@@ -83,7 +83,10 @@ Use the command `ruby main.rb` inside the root directory of the repo.
 ## authors
 
 👤 **JOSE ZEPEDA**
-👤 **Amare Kassa**
+
+- GitHub: [J2ZROMERO](https://github.com/J2ZROMERO)
+- Twitter: [@JOSEZEPED4](https://twitter.com/JOSEZEPED4)
+- LinkedIn: [JOSE ZEPEDA](https://www.linkedin.com/in/jose-zepeda-733ab91ab/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

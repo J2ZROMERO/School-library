@@ -5,10 +5,9 @@ class TrimmerDecorator
   end
 
   def correct_name()
-    if @nameable.name.length > 10
-      return @nameable.name.slice(0, 10) 
-    else 
-      return @nameable.name
-    end
+    return @nameable.name.slice(0, 10) if @nameable.name.length > 10
+
+
+    @nameable.name
   end
 end
