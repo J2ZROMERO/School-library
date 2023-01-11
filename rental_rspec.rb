@@ -17,7 +17,6 @@ describe Rental do
     end
   end
 
-
   context 'When testing the rentals class' do
     it 'The name the book ok this rental must be: Pinocho' do
       expect(@book.title).to eq 'Pinocho'
