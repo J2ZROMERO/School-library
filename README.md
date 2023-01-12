@@ -1,6 +1,5 @@
 # Enumerable
 
-<!-- TABLE OF CONTENTS -->
 # 📗 Table of Contents
 
 - [Enumerable](#enumerable)
@@ -9,7 +8,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
   - [💻 Getting Started ](#-getting-started-)
-    - [You need to hace installed git and GitHub in your local enviroment.](#you-need-to-hace-installed-git-and-github-in-your-local-enviroment)
+    - [You need to have installed git and GitHub in your local enviroment.](#you-need-to-have-installed-git-and-github-in-your-local-enviroment)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
@@ -19,11 +18,10 @@
   - [⭐️ Show your support ](#️-show-your-support-)
   - [📝 License ](#-license-)
 
-<!-- PROJECT DESCRIPTION -->
 
 # 📖 [School library] <a name="about-project"></a>
 
-**School Library: Refactorization: The objective of this milestone of the project is to appy the principles of `SOLID` object oriented programming feature and apply best practices of Ruby.**
+**School Library: Test: The objective of this milestone of the project is to unit test each class  if each class and its corresponding methods work correctly.**
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -61,29 +59,32 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- A [Ruby](https://www.ruby-lang.org/en/) istalled in your machine
+- A [Ruby](https://www.ruby-lang.org/en/) installed in your machine
 - Use an editor installed.
     Example-  [Editor code](https://www.creativebloq.com/advice/best-code-editors)
 
-### Setup
-
-Clone this repository to your desired folder:
-
-### Install
-
-- Save the file in your desire path.
 
 ### Usage
 
-To run the project, you must stay in the correct path and execute the command or use the terminal provided by your text code editor.
-Use the command `ruby main.rb` inside the root directory of the repo.
+To test this project, you must stay in the correct path and execute the command or use the terminal provided by your text code editor.
+Use the command `rspec class_name` inside the root directory of the repo, where `class_name` is the name of the classes in the project requirement to be tested.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## authors
 
 👤 **JOSE ZEPEDA**
+
+- GitHub: [J2ZROMERO](https://github.com/J2ZROMERO)
+- Twitter: [@JOSEZEPED4](https://twitter.com/JOSEZEPED4)
+- LinkedIn: [JOSE ZEPEDA](https://www.linkedin.com/in/jose-zepeda-733ab91ab/)
+
 👤 **Amare Kassa**
+
+- GitHub: [Github hhandle](https://github.com/amare1990)
+- Twitter: [Twitter handle](https://twitter.com/@amaremek)
+- LinkedIn: [LnkedIn handle](https://www.linkedin.com/in/amaremek)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
