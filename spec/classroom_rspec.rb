@@ -1,5 +1,5 @@
-require './classroom'
-require './student'
+require '../classroom'
+require '../student'
 
 describe ClassRoom do
   context 'When testing the classroom class' do

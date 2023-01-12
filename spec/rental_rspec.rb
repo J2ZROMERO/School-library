@@ -1,8 +1,8 @@
-require './rental'
-require './teacher'
-require './book'
-require './student'
-require './classroom'
+require '../rental'
+require '../teacher'
+require '../book'
+require '../student'
+require '../classroom'
 describe Rental do
   before(:all) do
     @teacher = Teacher.new(60, 'Abubakar', 'Medical')

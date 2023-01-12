@@ -1,5 +1,5 @@
-require './capitalize_decorator'
-require './person'
+require '../person'
+require '../capitalize_decorator'
 describe CapitalizeDecorator do
   describe 'when the capitalize_decorator runs' do
     it 'the method must change the first letter of the name to capitalized' do

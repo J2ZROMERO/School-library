@@ -1,5 +1,6 @@
-require './teacher'
-
+require '../teacher'
+require '../person'
+require '../teacher_option'
 describe Teacher do
   before(:all) do
     @teacher = Teacher.new(60, 'Abubakar', 'Medical')
