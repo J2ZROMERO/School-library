@@ -1,5 +1,5 @@
 require '../trimmer_decorator'
-require 'School-library/person'
+require '../person'
 
 describe TrimmerDecorator do
   describe 'when the trimmer decorator class runs' do
